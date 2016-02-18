@@ -4,7 +4,7 @@ Simple multi-user BlackJack application built in [Node.js](https://nodejs.org) a
 
 ## Description 
 
-This is simple multi-user BlackJack web app built in [Node.js](https://nodejs.org) and [Angular](https://angularjs.org/). Allows up to 7 users to connect from different windows/browsers and play BlackJack against a dealer. If more than 7 users connect, they enter a queue and wait for a slot to be freed. In any other case, users entering a running game will be prompted to wait for the next round, in which they will immediately take part.
+This is a simple multi-user BlackJack web app built in [Node.js](https://nodejs.org) and [Angular](https://angularjs.org/). Allows up to 7 users to connect from different windows/browsers and play BlackJack against a dealer. If more than 7 users connect, they enter a queue and wait for a slot to be freed. In any other case, users entering a running game will be prompted to wait for the next round, in which they will immediately take part.
 
 All users share the same Deck and can see each other's moves/cards (except cards that are hidden - two cards per user are hidden and one card for the dealer). 
 
@@ -55,7 +55,7 @@ This should start the application (`http://localhost:8000`) in a new browser win
 
 ### Connecting multiple users
 
-Once the frontend server is running, you may open `http://localhost:8000` in a new browser window and join a running game as another user (or new game if no active users). Reloading the browser will disconnect the current user and reconnect a new one. The current game will also restart. This is the expected behaviour although may also lead to a potential bug (see *known issues* below). You have a choice to Hit or Stick. 
+Once the frontend server is running, you may open `http://localhost:8000` in a new browser window and join a running game as another user (or new game if no active users). There is no waiting or clicking needed - you immediately enter to play. Reloading the browser will disconnect the current user and reconnect a new one. The current game will also restart if user was active in a running game. This is the "expected" behaviour although may also lead to a potential bug (see *known issues* below). You have a choice to Hit or Stick. 
 
 ### What to expect
 
