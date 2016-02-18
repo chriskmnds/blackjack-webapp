@@ -8,9 +8,9 @@ This is simple multi-user BlackJack web app built in [Node.js](https://nodejs.or
 
 All users share the same Deck and can see each other's moves/cards (except cards that are hidden - two cards per user are hidden and one card for the dealer). 
 
-Users can `Hit` (take additional cards) or `Stick` (take a stand). Users take turns to play and have *7* seconds to act, which if passed, the respective user will be forced to *Stick* and the next player will take turn. Dealer plays last and determines losers/winners, while showing everyone their scores. The next game starts after a brief delay (approx. *10* secs - users are prompted accordingly).
+Users can `Hit` (take additional cards) or `Stick` (take a stand). Users take turns to play and have *10* seconds to act, which if passed, the respective user will be forced to *Stick* and the next player will take turn. Dealer plays last and determines losers/winners, while showing everyone their scores. The next game starts after a brief delay (approx. *10* secs - users are prompted accordingly).
 
-If windows are left idle, connected users will auto-play given the timer (*Stick* on every round after the *7* seconds pass). This is the expected behaviour, although may lead to a potential bug (see *known issues* below).
+If windows are left idle, connected users will auto-play given the timer (*Stick* on every round after the *10* seconds pass). This is the expected behaviour, although may lead to a potential bug (see *known issues* below).
 
 ## Installation
 
@@ -77,7 +77,7 @@ Below is a screenshot of the application with *3* users connected.
 
 - Timer would be better handled at the backend rather than the frontend (as it is currently) - for obvious reasons.
 
-- Connected sockets are referenced in an array on the server (connected_sockets) to keep track of them and forcibly disconnect them when restarting the server. Ok for development, but will require better handling going forward.
+- Connected sockets are referenced in an array on the server (connected_sockets) to keep track of them and forcibly disconnect them when restarting the server. Ok for development, but will require better handling going forward. **Note*: this has been disabled alltogether for now.
 
 - No tests.
 
