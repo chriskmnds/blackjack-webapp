@@ -73,6 +73,8 @@ MIT
 
 - Users cannot place Bets. At the end of each round only winners/losers are determined.
 
+- There is no "click to play" button anywhere. A user starts playing immediately on browsing to the app (or waits for the next round). This is an easy fix, but I left it this way for quick prototyping/development.
+
 - Users' scores are determined at the end, after the dealer plays. As it currently stands, a user can break the system if he/she keeps hitting until the Deck (there is only one Deck) is exhausted. This can be handled by flagging the user as "busted" when exceeding 21, rather than waiting until the end of the game to determine scores.
 
 - As mentioned above, if windows are left idle, connected users will auto-play given the timer (stick on every round). This needs to be handled more properly. Maybe move idle users to another table/room or disconnect them altogether after a few rounds.
