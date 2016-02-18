@@ -1,0 +1,26 @@
+{
+  "name": "blackjack",
+  "version": "0.0.1",
+  "description": "Backend webservice for blackjack app.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chriskmnds/blackjack-webapp.git"
+  },
+  "scripts": {},
+  "license": "MIT",
+  "engines": {
+    "node": "0.12.2",
+    "npm": "2.7.5"
+  },
+  "author": "Christos Koumenides <christoskoumenides@gmail.com>",
+  "devDependencies": {},
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "4.x",
+    "morgan": "^1.6.1",
+    "shortid": "^2.2.4",
+    "shuffle-array": "^0.1.2",
+    "socket.io": "^1.4.5"
+  }
+}

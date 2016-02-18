@@ -1,0 +1,26 @@
+div.container-fluid.main
+  div.row
+    div.col-md-12#header.center
+      h2 ___BlackJack___
+  div.row
+    div.col-md-12
+      h4.heading 
+        span Your Cards 
+        span.small (ID {{current_user.id}})
+      div#user_controls
+        h3.msg 
+          span {{status.msg}}
+          span.countdown(ng-if="!status.wait")
+            timer(countdown="10" interval="1000" finish-callback="stick()") {{sseconds}}
+        user-cards-renderer(user="current_user")
+        div.control_btn.btn.btn-default(ng-click="hit()" ng-disabled="status.wait") HIT
+        div.control_btn.btn.btn-default(ng-click="stick()" ng-disabled="status.wait") STICK
+  div.row#table
+    div.col-md-12
+      h4.heading Table Cards
+    div.col-md-12(inner_col_size="3")
+      user-cell-renderer(ng-repeat="user in users.slice(0,4) track by $index")
+        user-cards-renderer(user="user")
+    div.col-md-12(inner_col_size="3")
+      user-cell-renderer(ng-repeat="user in users.slice(4) track by $index")
+        user-cards-renderer(user="user")

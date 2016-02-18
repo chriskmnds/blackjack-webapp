@@ -1,0 +1,21 @@
+div.user
+  h6(ng-if="!user.dealer && !user.self") USER {{user.user}}
+  h6(ng-if="user.dealer") DEALER
+  div  
+    div.card_container(ng-repeat="card in user.cards track by $index")
+      div.card(ng-if="!card.hidden")(class='{{user.self ? "self_card" : "table_card"}}')
+          span.card_top {{card.card.value}}
+          span.card_top(ng-bind-html="wrap_code(card.card.suit)")
+          span.card_middle(ng-bind-html="wrap_code(card.card.suit)")
+          span.card_bottom(ng-bind-html="wrap_code(card.card.suit)")
+          span.card_bottom {{card.card.value}}
+      div.card.hidden_card(ng-if="card.hidden")(class='{{user.self ? "self_card" : "table_card"}}')
+          span.card_top &#10070;
+          span.card_top &nbsp; 
+          span.card_middle &#10070;
+          span.card_bottom &nbsp;
+          span.card_bottom &#10070;
+  div(ng-if="user.score")
+    h2 
+      span(ng-if="user.user == current_user.user") Your score:  
+      span {{user.score}}

@@ -1,0 +1,15 @@
+*.log
+*.swp
+*.gitignore~
+*.styl~
+.DS_Store
+.lvimrc
+.editorconfig
+bower_components/
+node_modules/
+scrap/
+tmp/
+public/
+*.jade~
+*.js~
+*~

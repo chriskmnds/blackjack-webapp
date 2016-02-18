@@ -1,0 +1,32 @@
+{
+  "name": "blackjack",
+  "version": "0.0.1",
+  "authors": [
+    "Christos Koumenides <chriskmnds@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-animate": "~1.4.0",
+    "angular-sanitize": "~1.4.0",
+    "angular-ui-router": "0.2.11",
+    "normalize-css": "~2.1.3",
+    "angular-socket-io": "~0.7.0",
+    "angular-timer": "~1.3.3"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "angular": "~1.4.0"
+  }
+}
