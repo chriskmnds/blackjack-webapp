@@ -63,6 +63,10 @@ Below is a screenshot of the application with *3* users connected.
 
 ![game screenshot](./game-screenshot.png)
 
+## License
+
+MIT
+
 ## Known Issues
 
 - Functionality for Splitting has not been implemented.
