@@ -25,7 +25,7 @@ The backend and frontend are bundled as different endpoints. The backend is a No
 
 	`npm install -g gulp`
 
-#### Setting up the Backend
+### Setting up the Backend
 
 1. Change directory to `blackjack-backend`
 2. Install required packages:
@@ -36,7 +36,7 @@ The backend and frontend are bundled as different endpoints. The backend is a No
 
 	`npm start`
 
-#### Setting up the Frontend
+### Setting up the Frontend
 
 1. Change directory to `blackjack-angular`
 2. Install required npm and bower packages:
