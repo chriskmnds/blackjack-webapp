@@ -61,7 +61,7 @@ Once the frontend server is running, you may open `http://localhost:8000` in a n
 
 Below is a screenshot of the application with *3* users connected.
 
-![game screenshot](./game-screenshot-2.png)
+![game screenshot](./game-screenshot.png)
 
 ## License
 
