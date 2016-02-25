@@ -14,7 +14,7 @@ Simple multi-user BlackJack/21 web app built in [Node.js](https://nodejs.org) an
 
 * If windows are left idle, connected users will auto-play given the timer (`Stick` on every round after the 10-seconds countdown). This is the expected behaviour, although may lead to a potential bug (see *known issues* below).
 
-## Installation
+## Setup
 
 The backend and frontend are bundled as different endpoints. The backend is a Node [socket.io](http://socket.io/) server and runs on port *3000*. The frontend is served from a different Express server on port *8000*. Included in the repository are all the development scripts. Switching to different ports requires changing configuration on both ends.
 
