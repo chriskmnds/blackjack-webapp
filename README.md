@@ -1,4 +1,4 @@
-# Blackjack Game
+# Blackjack Webapp
 
 Simple multi-user BlackJack/21 web app built in [Node.js](https://nodejs.org) and [Angular](https://angularjs.org/).
 
